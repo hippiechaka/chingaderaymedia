@@ -1,0 +1,30 @@
+/*RESET*/
+.clear,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;text-decoration:none}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input,textarea{border:0}img{vertical-align:middle!important}.clear{clear:both}a:focus{outline:0}
+/* MAIN STYLES */
+body{
+	margin:0;
+	background:url(../images/mono.jpg)no-repeat top center #fff;
+	background-size:520px;
+	font-family: 'Poppins', sans-serif;
+	position:relative;
+	min-height:600px;
+}
+#mainLogo{
+	background:url(../images/logo.png)no-repeat;
+	background-size:contain;
+	width:300px;
+	height:194px;
+	display:block;
+	left:calc(50% - 150px);
+	position:absolute;
+	top: 280px;
+}
+#txtRef{
+	position:absolute;
+	top:520px;
+	text-align:center;
+	width:100%;
+	letter-spacing:6px;
+	font-size:14px;
+}
+
