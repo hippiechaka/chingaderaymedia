@@ -129,7 +129,8 @@ input[type=checkbox]:checked + label:before {
 }
 
 .layer:nth-child(6) {
-  opacity: 0.90;
+  /*opacity: 0.90;*/
+  opacity:1;
 }
 .layer:nth-child(6) button {
 }
