@@ -12,19 +12,71 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+	<!-- bootstrap-CDN-CSS -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<!-- Google-Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Shrikhand&subset=latin-ext" rel="stylesheet">
-
+	<!-- animate.css-CDN -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
 	<style>
+/* 
+==========================================================================
+By: @hippiechaka
+==========================================================================
+*/
+
 		body{font-family: 'Cookie';font-size:16px;color:#a5a5a5;}
-		section{padding:0;}
+		header{position:fixed;top:20px;right:20px;width:200px;height:160px;display:none;z-index:99999;}
+		footer{background:#f2941c;}
+		footer p{text-align:center;width:100%;color:#ffddbb;}
+		section{padding:0;margin:0;}
 		h1{font-family: 'Shrikhand';}
-		.jumbotron{background:none;text-align:center;}
+		.jumbotron{background:none;text-align:center;margin:0;padding:0; }
 		.jumbotron h1{color:#fff;font-size:5em;width:100%;}
+		.jumbotron h2{color:#fff;font-size:3em;width:100%;}
 		.jumbotron p{font-size:2.5em;}
 		.jumbotron ul{text-align:left;font-size:1.5em;} 
 		.black{color:#000;}
 		.trance-color{color:#0fa;}
+		hr.grad {
+		    border: 0;
+		    height: 1px;
+		    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+		hr.grad-inverted {
+		    border: 0;
+		    height: 1px;
+		    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0));
+		}
+		.legal{color:#502205;font-size:1.5em;}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: queries !!
+*/
+		/*XL*/
+		@media (min-width: 1440px) {}
+		/*LG*/
+		@media (max-width: 1200px) {}
+		@media (max-width: 1024px) {}
+		/*MD*/
+		@media (max-width: 991px) {
+			header{display:block;opacity:0.75;}
+			.jumbotron p{width:90%;margin:0 auto;}
+		}
+		/*SM*/
+		@media (max-width: 767px) {
+			header{display:block;opacity:0.6;}
+			.jumbotron h1{font-size:4em;}
+			.jumbotron ul{width:90%;margin:0 auto;}
+		}
+		/*XS*/
+		@media (max-width: 480px) {
+			header{opacity:0.55;right:initial;left:calc(50% - 100px);top:calc(100% - 180px);}
+			.jumbotron h1{font-size:3.5em;}
+			.jumbotron ul{width:80%;}
+		}
+		@media (max-width: 320px) {
+			header{opacity:0.3;}
+		}
 	</style>
 
 
@@ -32,21 +84,25 @@
 </head>
 <body>
 
-
-<section style="min-height:100vh;background:#5b1e4a;">
+<header><img src="images/move-phone-icon.png" alt="" class="animated tada infinite"></header>
+<section style="min-height:100vh;background:#424a3e;margin:0;padding-bottom:90px;z-index:9999;position:relative;">
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
+				<div class="clear" style="height:45px;"></div>
 				<h1>La Chingada</h1>
 				<p class="black" align="center">[del verbo "chingar"]</p>
+				<hr class="grad" style="margin-bottom:0;">
+				<hr class="grad-inverted" style="margin-top:0;">
 				<p>" La Chingada está relacionada con el verbo chingar, también de uso intensivo en México como palabra malsonante. Guido Gómez de Silva remite el origen al español chingar.2 El Diccionario de la lengua española señala que chingar deriva de <em class="trance-color">čingarár</em>, término del caló que tiene el sentido de pelear.3 Por su parte, los autores del Diccionario de nahuatlismos en el español de México lo ubican como un nahuatlismo controvertido, relacionado con la voz náhuatl <em class="trance-color">tzinco</em> ("en el ano"). "</p>
+				<div class="clear" style="height:45px;"></div>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<section id="parallaxScreen" style="background:#ccc;">
+<section id="parallaxScreen" style="background:#ccc;margin:0;z-index:9998;">
 	<div id="container" class="">
 		<ul id="scene" class="scene">
 			<li class="layer" data-depth="1.00"><img src="images/layer1.png"></li>
@@ -59,14 +115,17 @@
 	</div>
 </section>
 
-<section style="min-height:100vh;background:#5b1e4a;">
+<section style="min-height:100vh;background:#5b1e4a;margin:0;z-index:9999;position:relative;">
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
-				<p class="black" align="center">Frases Hechas</p>
+				<div class="clear" style="height:45px;"></div>
+				<h2 class="black" align="center">Frases Hechas</h2>
+				<hr class="grad" style="margin-bottom:0;">
+				<hr class="grad-inverted" style="margin-top:0;">
 				<ul>
 					<li><strong class="trance-color">Estar dado a la Chingada:</strong> arruinado.</li>
-					<li><strong class="trance-color">Estar de la Chingada (o de la retostada):</strong> ser algo malo, difícil o complicado.</li>
+					<li><strong class="trance-color">Estar de la Chingada:</strong> ser algo malo, difícil o complicado.</li>
 					<li><strong class="trance-color">Estar bien Chingado:</strong> estar enfermo o en situaciones económicas desfavorables.</li>
 					<li><strong class="trance-color">Ir hecho la Chingada:</strong> ir rapidísimo.</li>
 					<li><strong class="trance-color">Ir a la Chingada:</strong> irse disgustado.</li>
@@ -76,15 +135,34 @@
 					<li><strong class="trance-color">¡Me lleva la Chingada!:</strong> exclamación de protesta que se usa para dar salida al enojo, cuando se sufren adversidades, o de sorpresa.<!-- ; formas eufemísticas son ¡me lleva la fregada, la tía de las muchachas, la tiznada, la tostada, la trampa, el tren, la tristeza, la trompada. --></li>
 					<li><strong class="trance-color">Camarón que se duerme se lo lleva la chingada:</strong> proverbio muy mexicano.</li>
 				</ul>
+				<div class="clear" style="height:45px;"></div>
 			</div>
 		</div>
 	</div>
 </section>
 
+<footer>
 
+
+<div class="container">
+	<div class="row">
+		<div class="clear" style="height:25px;"></div>
+		<p class="legal">Por: @hippiechaka</p>
+		<hr class="grad" style="margin-bottom:0;">
+		<hr class="grad-inverted" style="margin-top:0;">
+		<p>[ Fuente: <a href="https://es.wikipedia.org/wiki/La_Chingada" target="_blank">Wikipedia</a> ]</p>
+		<div class="clear" style="height:15px;"></div>
+	</div>
+</div>
+
+	
+</footer>
 	<!-- Scripts -->
+	<!-- JQUERY -->
 	<script src="scripts/jquery.js"></script>
+	<!-- bootstrap-CDN-JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- jqueryParallax -->
 	<script src="scripts/jquery.parallax.js"></script>
 	<script>
 
